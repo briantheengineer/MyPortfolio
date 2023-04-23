@@ -5,6 +5,9 @@
     font-family: 'Bebas Neue', cursive;
 }
 
+html {
+    scroll-behavior: smooth;
+}
 
 .sidebar {
     top:0;
@@ -44,6 +47,8 @@
     align-items: right;
     font-size:28px;
     font-weight: bold;
+    overflow: hidden;
+    text-align: center;
 
 }
 
@@ -149,11 +154,52 @@ a:active { text-decoration: none; }
     margin-top: 10px;
 }
 
- /*.icondiv {
-    position:absolute;
-    bottom:0;
-    left: 0;
-    margin-left: 50px;
-    margin-bottom: 50px;
+
+.myprojectscontainer {
+    min-height:550px;
+    height:600px;
+    width:100%;
+    border: 1px solid black;
+    text-align: center;
 }
- */
+
+.projecttitle {
+    padding-top: 30px;
+}
+
+.myprojects {
+    width: 100%;
+    height: 600px;
+    border:1px solid red;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    overflow: hidden;
+    margin-top:-70px
+    
+}
+
+.projects {
+    width:28%;
+    height: 50%;
+    min-width: 200px;
+    min-height: 30%;
+    border:1px solid grey;
+    margin:5px;
+    text-align:center;
+    position: relative;
+    background-color: green;
+    border-radius: 20px;
+}
+
+.projects img {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+ 
+.projectname {
+    width: 100%;
+    background-color: white;
+}
