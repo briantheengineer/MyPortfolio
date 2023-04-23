@@ -157,40 +157,43 @@ a:active { text-decoration: none; }
 
 .myprojectscontainer {
     min-height:550px;
-    height:600px;
+    height:100%;
     width:100%;
     border: 1px solid black;
     text-align: center;
+    flex-wrap: wrap;
 }
 
 .projecttitle {
-    padding-top: 30px;
+   padding-top: 30px; 
+   margin-bottom: 60px;;
 }
 
 .myprojects {
     width: 100%;
-    height: 600px;
+    height: 100%;
     border:1px solid red;
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
     overflow: hidden;
-    margin-top:-70px
+    padding: 30px 0px;
     
 }
 
 .projects {
-    width:28%;
-    height: 50%;
+    width:300px;
+    height: 250px;
     min-width: 200px;
     min-height: 30%;
     border:1px solid grey;
-    margin:5px;
+    margin: 20px;
     text-align:center;
     position: relative;
-    background-color: green;
+    background-color: rgba(203,195,227,.3);
     border-radius: 20px;
+    box-shadow: 10px -5px rgba(203,195,227, 0.3);
 }
 
 .projects img {
