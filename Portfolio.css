@@ -162,6 +162,7 @@ a:active { text-decoration: none; }
     border: 1px solid black;
     text-align: center;
     flex-wrap: wrap;
+    background-color: whitesmoke;
 }
 
 .projecttitle {
@@ -194,6 +195,7 @@ a:active { text-decoration: none; }
     background-color: rgba(203,195,227,.3);
     border-radius: 20px;
     box-shadow: 10px -5px rgba(203,195,227, 0.3);
+    cursor: pointer;
 }
 
 .projects img {
@@ -205,4 +207,31 @@ a:active { text-decoration: none; }
 .projectname {
     width: 100%;
     background-color: white;
+}
+
+.intro {
+    width:100%;
+    height: auto;
+    position:absolute;
+    background-color: rgba(0,0,0, 0.9);
+    overflow: hidden;
+    color:white;
+    bottom:1px;
+    padding:5px;
+    margin: 3px 0px -2px 0px;
+    visibility:hidden;
+    opacity: 0;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.intro p {
+    color:white;
+    
+}
+
+.projects:hover .intro {
+    opacity: 1;
+    visibility: visible;
+    transition: height 0.5s;
 }
