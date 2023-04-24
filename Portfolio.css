@@ -5,6 +5,10 @@
     font-family: 'Bebas Neue', cursive;
 }
 
+h1 {
+    font-size: 10vh;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -13,7 +17,7 @@ html {
     top:0;
     height: 80px;
     width: 100%;
-    border: 1px solid green;
+    /*border: 1px solid green;*/
     text-align: center;
     overflow-x: hidden;
     position:fixed;
@@ -41,7 +45,7 @@ html {
     width: 40%;
     float: right;
     height: auto;
-    border:1px black solid;
+   /* border:1px black solid;*/
     display: flex;
     justify-content: space-around;
     align-items: right;
@@ -67,24 +71,26 @@ a:active { text-decoration: none; }
     background-repeat: repeat;
     -webkit-background-clip: text;
     color:transparent;
+    transition:0.5s;
 }
 
 .aboutme {
   /*  height: 650px; */
     height: 100%;
     width:100%;
-    border: 1px solid black;
-    overflow: hidden;
+   /* border: 1px solid black;*/
+    
     display: flex;
     justify-content: center;
     align-items: center;
     background-image: linear-gradient(to bottom right,  rgb(100,61,194), rgb(30, 5, 45));
     padding-top: 80px;
+    position: relative;
 }
 
 .container {
     width:70%;
-    border:1px solid black;
+   /* border:1px solid black;*/
     height: 100%;
     min-height: 400px;
     display: flex;
@@ -96,14 +102,14 @@ a:active { text-decoration: none; }
     box-shadow: 40px -20px rgba(0, 0, 0, 0.1);
     background-image: url(https://cdn.wallpapersafari.com/18/42/DokSTU.jpg);
     overflow: hidden;
-    position:sticky;
+    position:relative;
     padding: 20px;
     margin-top: 95px;
     margin-bottom: 95px; 
 }
 
 .logoimg {
-    border: 1px solid black;
+   /* border: 1px solid black;*/
     width: 250px;
     min-width: 125px;
     height: 250px;
@@ -123,7 +129,7 @@ a:active { text-decoration: none; }
 
 .text {
     margin-left: 5px;
-    border: 1px solid brown;
+    /*border: 1px solid brown;*/
     color:white;
 }
 
@@ -154,26 +160,47 @@ a:active { text-decoration: none; }
     margin-top: 10px;
 }
 
+.custom-shape-divider-bottom-1682369104 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-bottom-1682369104 svg {
+    position: relative;
+    display: block;
+    width: calc(137% + 1.3px);
+    height: 61px;
+}
+
+.custom-shape-divider-bottom-1682369104 .shape-fill {
+    fill: #FFFFFF;
+}
+
 
 .myprojectscontainer {
     min-height:550px;
     height:100%;
     width:100%;
-    border: 1px solid black;
+   /* border: 1px solid black;*/
     text-align: center;
     flex-wrap: wrap;
-    background-color: whitesmoke;
+    background-color: white;;
 }
 
 .projecttitle {
-   padding-top: 30px; 
-   margin-bottom: 60px;;
+   margin: 10px 0px; 
+   width: 100%;
+   padding-top: 80px;
 }
 
 .myprojects {
     width: 100%;
     height: 100%;
-    border:1px solid red;
+  /*  border:1px solid red;*/
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -188,7 +215,7 @@ a:active { text-decoration: none; }
     height: 250px;
     min-width: 200px;
     min-height: 30%;
-    border:1px solid grey;
+    /*border:1px solid grey;*/
     margin: 20px;
     text-align:center;
     position: relative;
@@ -206,7 +233,7 @@ a:active { text-decoration: none; }
  
 .projectname {
     width: 100%;
-    background-color: white;
+    background-color: transparent;
 }
 
 .intro {
@@ -230,8 +257,130 @@ a:active { text-decoration: none; }
     
 }
 
+.projects:hover {
+    width:350px;
+    height: 300px;
+    transition: all 1s ease-in-out;
+}
+
+
 .projects:hover .intro {
     opacity: 1;
     visibility: visible;
     transition: height 0.5s;
+}
+
+.contactme {
+    height:600px;
+    width: 100%;
+   /* border:1px solid black;*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: #663dff;
+    background-image: linear-gradient(319deg, rgb(100,61,194), rgb(30, 5, 45));
+    position: relative;
+}
+
+.title {
+  /*  border:2px solid salmon;*/
+    height: auto;
+    width: 100%;
+    text-align: center;
+    color:black;
+}
+
+
+
+.mysocials{
+    width:fit-content;
+    height: 250px;
+    padding: 10px 30px;
+    border:3px black solid;
+    border-radius: 20px;
+    text-align: center;
+    margin-top: -100px;
+}
+
+.socialicons {
+    height:100px;
+    width:100%;
+    object-fit: cover;
+
+}
+
+.socialicons img {
+    height: 100%;
+    width:100%
+}
+
+.iconcontainer {
+    height: 70px;
+    width: 70px;
+  /*  border:1px solid yellow;*/
+    margin: 5px;
+    background-color: rgba(255,255,255, .1);
+    border-radius: 20px;
+    padding:5px;
+}
+
+.iconcontainer:hover {
+    height:75px;
+    width:75px;
+
+}
+
+.spacearound {
+    display: flex;
+    justify-content: center;
+}
+
+.resume {
+    padding-top: 50px;
+    margin:5px;
+    
+}
+
+.resume h3 {
+    color:white;
+    font-size: 20px;
+}
+
+.custom-shape-divider-top-1682369629 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-top-1682369629 svg {
+    position: relative;
+    display: block;
+    width: calc(108% + 1.3px);
+    height: 47px;
+    transform: rotateY(180deg);
+}
+
+.custom-shape-divider-top-1682369629 .shape-fill {
+    fill: #FFFFFF;
+}
+
+.contactme h2 {
+    font-size: 6vh;
+}
+
+.contactme p {
+    font-size: 3vh;
+}
+
+#myprojectstitle {
+    background-image: linear-gradient(to right, rgb(100,61,194), rgb(10, 1, 15));
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    color:transparent;
+   
 }
