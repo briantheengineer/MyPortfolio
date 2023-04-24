@@ -215,7 +215,7 @@ a:active { text-decoration: none; }
     height: 250px;
     min-width: 200px;
     min-height: 30%;
-    /*border:1px solid grey;*/
+    border:1px solid grey;
     margin: 20px;
     text-align:center;
     position: relative;
