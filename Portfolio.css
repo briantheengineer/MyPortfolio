@@ -271,16 +271,17 @@ a:active { text-decoration: none; }
 }
 
 .contactme {
-    height:600px;
+    height:400px;
     width: 100%;
    /* border:1px solid black;*/
     display: flex;
-    align-items: center;
+    align-items:end;
     justify-content: center;
     flex-wrap: wrap;
     background-color: #663dff;
     background-image: linear-gradient(319deg, rgb(100,61,194), rgb(30, 5, 45));
     position: relative;
+    padding-bottom: 8px;
 }
 
 .title {
@@ -288,7 +289,8 @@ a:active { text-decoration: none; }
     height: auto;
     width: 100%;
     text-align: center;
-    color:black;
+    color:white;
+    margin-bottom: 50px;
 }
 
 
