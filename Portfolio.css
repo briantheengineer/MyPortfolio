@@ -80,7 +80,6 @@ a:active { text-decoration: none; }
     height: 100%;
     width:100%;
    /* border: 1px solid black;*/
-    
     display: flex;
     justify-content: center;
     align-items: center;
@@ -110,7 +109,7 @@ a:active { text-decoration: none; }
 }
 
 .logoimg {
-   /* border: 1px solid black;*/
+    border: 2px solid white;
     width: 250px;
     min-width: 125px;
     height: 250px;
