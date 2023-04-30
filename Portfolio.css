@@ -3,6 +3,7 @@
     margin:0;
     box-sizing: border-box;
     font-family: 'Bebas Neue', cursive;
+    
 }
 
 h1 {
@@ -185,7 +186,8 @@ a:active { text-decoration: none; }
     min-height:550px;
     height:100%;
     width:100%;
-   /* border: 1px solid black;*/
+    border: 1px solid transparent;
+    border-bottom: white;
     text-align: center;
     flex-wrap: wrap;
     background-color: white;;
@@ -297,10 +299,10 @@ a:active { text-decoration: none; }
 
 .mysocials{
     width:fit-content;
-    height: 250px;
+    height: 200px;
     padding: 10px 30px;
-    border:3px black solid;
-    border-radius: 20px;
+    /*border:3px black solid;*/
+    border-width: 100%;
     text-align: center;
     margin-top: -100px;
 }
@@ -357,6 +359,8 @@ a:active { text-decoration: none; }
     overflow: hidden;
     line-height: 0;
     transform: rotate(180deg);
+    color:white;
+    
 }
 
 .custom-shape-divider-top-1682369629 svg {
@@ -365,10 +369,16 @@ a:active { text-decoration: none; }
     width: calc(108% + 1.3px);
     height: 47px;
     transform: rotateY(180deg);
+    color:white;
+    border:1px solid white;
+    border-top-width: 0;
+    border-bottom-width: 0;
+ 
 }
 
 .custom-shape-divider-top-1682369629 .shape-fill {
-    fill: #FFFFFF;
+    fill: white;
+    border:solid white 1px;
 }
 
 .contactme h2 {
