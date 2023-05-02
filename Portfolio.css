@@ -212,11 +212,11 @@ a:active { text-decoration: none; }
 }
 
 .projects {
-    width:300px;
-    height: 250px;
-    min-width: 200px;
+    width:70%;
+    height: fit-content;
+    min-width: 500px;
     min-height: 30%;
-    border:1px solid grey;
+    border:1px solid grey; 
     margin: 20px;
     text-align:center;
     position: relative;
@@ -224,52 +224,82 @@ a:active { text-decoration: none; }
     border-radius: 20px;
     box-shadow: 10px -5px rgba(203,195,227, 0.3);
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
 }
 
 .projects img {
     width: 100%;
     height: 100%;
+    min-height: 200px;
     border-radius: 20px;
+    padding:5px;
 }
  
+.projectimg {
+    height: 100%;
+    width:50%;
+    min-width: 200px;
+    max-width:450px;
+}
+
 .projectname {
     width: 100%;
     background-color: transparent;
 }
 
-.intro {
-    width:100%;
-    height: auto;
-    position:absolute;
-    background-color: rgba(0,0,0, 0.9);
+.projecttext {
+   /* border:1px solid black; */
+    width:50%;
+    height: 90%;
     overflow: hidden;
-    color:white;
-    bottom:1px;
-    padding:5px;
-    margin: 3px 0px -2px 0px;
-    visibility:hidden;
-    opacity: 0;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
+    padding-top: 10px;
 }
 
-.intro p {
-    color:white;
+.projecttext h2 {
+    font-size: 5vh;
+}
+
+.projecttext p {
+    text-align: left;
+    padding:5px;
+    font-size:3vh ;
+}
+
+.iconsdiv {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-left: 20px;
+    width:50px;
+    height:50px;
+}
+
+.icons {
+    width:50px;
+    height:50px;
+    border:1px solid black;
+    margin:10px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.icons img {
+    width: 100%;
+    height: 100%;
     
 }
 
-.projects:hover {
+
+/*.projects:hover {
     width:350px;
     height: 300px;
     transition: all 1s ease-in-out;
 }
+*/
 
-
-.projects:hover .intro {
-    opacity: 1;
-    visibility: visible;
-    transition: height 0.5s;
-}
 
 .contactme {
     height:400px;
