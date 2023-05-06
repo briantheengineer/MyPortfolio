@@ -92,14 +92,14 @@ a:active { text-decoration: none; }
 
 .container {
     width:70%;
-   /* border:1px solid black;*/
+    border:1px solid black;
     height: 100%;
     min-height: 400px;
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-evenly;
     align-items: center;
     /*background: rgba(107, 55, 193, 1);*/
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     border-radius: 60px;
     box-shadow: 40px -20px rgba(0, 0, 0, 0.1);
     background-image: url(https://cdn.wallpapersafari.com/18/42/DokSTU.jpg);
