@@ -180,6 +180,7 @@ a:active { text-decoration: none; }
 
 .custom-shape-divider-bottom-1682369104 .shape-fill {
     fill: #FFFFFF;
+    
 }
 
 
@@ -284,7 +285,7 @@ a:active { text-decoration: none; }
 .projecttext p {
     text-align: left;
     padding:5px;
-    font-size:3vh ;
+    font-size:3vh;
 }
 
 .iconsdiv {
@@ -451,3 +452,48 @@ a:active { text-decoration: none; }
     color:transparent;
    
 }
+
+@media  (max-width: 390px) and (max-height: 844px) {
+    .sidebar {
+        height: fit-content;
+    }
+    .sidebar h2 {
+        font-size: 45px;
+    }
+    .sidebarlinks{
+        flex-wrap: wrap;
+        height: max-content;
+        overflow: visible;
+        width: 100%;
+    }
+    .links {
+        width: 150px;
+        height: 100%;
+        font-size: 30px;
+        flex-wrap: wrap;
+        padding-bottom: 10px;
+    }
+    .sidebar {
+        flex-wrap: wrap;
+    }
+    .container {
+        flex-wrap: wrap;
+        width:90%;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .logoimg {
+        margin-left: 3px;
+    }
+    .projects {
+        width: max-content;
+        height: max-content;
+    }
+    .projectdescription {
+        width:80%;
+        margin-left:38px;
+        font-size: 23px;
+    }
+};
